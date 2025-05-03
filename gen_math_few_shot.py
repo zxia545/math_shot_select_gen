@@ -135,7 +135,7 @@ if __name__ == "__main__":
 
     # --- Start Server (if local path provided and no api_base override) ---
     vllm_process = None
-    should_start_server = args.model_path and not args.api_base
+    should_start_server = args.model_path
     try:
         if should_start_server:
             print(f"Starting vLLM server for model '{args.model_name}' on port {args.port}...")
